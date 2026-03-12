@@ -3,9 +3,9 @@ import { directionMembers } from '../data/data';
 
 export default function DirectionCouncil() {
   return (
-    <div className="card">
+    <div className="card card-accent">
       <div className="card-header">
-        <div className="flex items-center"><div className="card-header-bar accent"></div><div className="card-header-icon accent"><Users strokeWidth={1.8} className="w-4 h-4 text-accent" /></div><h3 className="accent">Conseil de direction</h3></div>
+        <div className="flex items-center"><div className="card-header-icon accent"><Users strokeWidth={1.8} className="w-4 h-4 text-accent" /></div><h3 className="accent">Conseil de direction</h3></div>
         <span className="text-[11px] text-slate-400">{directionMembers.length} membres</span>
       </div>
       <div className="max-h-[370px] overflow-y-auto custom-scroll">

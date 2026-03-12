@@ -31,9 +31,9 @@ export default function HealthEstablishments() {
   });
 
   return (
-    <div className="card">
+    <div className="card card-accent">
       <div className="card-header">
-        <div className="flex items-center"><div className="card-header-bar accent"></div><div className="card-header-icon accent"><LucideIcons.Building2 strokeWidth={1.8} className="w-4 h-4 text-accent" /></div><h3 className="accent">Réseau BNI</h3></div>
+        <div className="flex items-center"><div className="card-header-icon accent"><LucideIcons.Building2 strokeWidth={1.8} className="w-4 h-4 text-accent" /></div><h3 className="accent">Réseau BNI</h3></div>
       </div>
       <div className="px-4 pt-3 space-y-2">
         <div className="relative">

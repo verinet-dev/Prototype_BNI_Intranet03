@@ -48,13 +48,13 @@ export default function Navbar() {
           <div className="flex-1"></div>
 
           <div className="flex items-center gap-3">
-            <button className="relative w-10 h-10 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors">
+            <button className="relative w-10 h-10 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors" aria-label="Notifications">
               <Bell strokeWidth={1.5} className="w-5 h-5 nav-icon" />
-              <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-brand rounded-full border-2 border-transparent"></span>
+              <span className="absolute top-1.5 right-1.5 w-2.5 h-2.5 bg-brand rounded-full border-2 border-transparent notification-pulse"></span>
             </button>
-            <div className="hidden md:flex items-center gap-2">
-              <img src="https://i.pravatar.cc/100?img=47" alt="Profil" className="w-9 h-9 rounded-full border-2 border-white/30 object-cover" />
-              <span className="logo-text text-xs font-medium hidden lg:block">Kouamé Marie</span>
+            <div className="hidden md:flex items-center gap-2.5 cursor-pointer group">
+              <img src="https://i.pravatar.cc/100?img=47" alt="Profil" className="w-9 h-9 rounded-full border-2 border-white/30 object-cover group-hover:border-brand/50 transition-colors" />
+              <span className="logo-text text-xs font-medium hidden lg:block group-hover:text-brand transition-colors">Kouamé Marie</span>
             </div>
             <button onClick={() => setMobileOpen(true)} className="lg:hidden w-10 h-10 flex items-center justify-center hover:bg-white/10 rounded-full transition-colors">
               <Menu strokeWidth={1.5} className="w-5 h-5 nav-icon" />

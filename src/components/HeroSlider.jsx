@@ -45,7 +45,7 @@ export default function HeroSlider() {
             {slideData[current].description}
           </p>
           <div className="hero-content-enter-delay">
-            <a href="#" className="group inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-sm font-semibold px-7 py-3.5 rounded-lg transition-all shadow-lg shadow-brand/25 hover:shadow-xl hover:shadow-brand/30 hover:-translate-y-0.5">
+            <a href="#" className="btn-shine group inline-flex items-center gap-2 bg-brand hover:bg-brand-dark text-white text-sm font-semibold px-7 py-3.5 rounded-lg transition-all shadow-lg shadow-brand/25 hover:shadow-xl hover:shadow-brand/30 hover:-translate-y-0.5">
               En savoir plus
               <ArrowRight strokeWidth={2} className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
@@ -54,22 +54,27 @@ export default function HeroSlider() {
       </div>
 
       {/* DG Badge — Desktop */}
-      <div className="dg-badge hidden lg:flex absolute right-[4%] bottom-[12%] z-20 w-115 bg-black/50 backdrop-blur-xl border border-white/25 rounded-xl overflow-hidden shadow-2xl">
+      <div className="dg-badge hidden lg:flex absolute right-[3%] bottom-[10%] z-20 w-135 bg-black/55 backdrop-blur-xl border border-white/15 rounded-2xl overflow-hidden shadow-[0_8px_60px_rgba(0,0,0,0.35)]">
         <div className="flex">
-          <div className="w-45 shrink-0 relative">
-            <img src="/Image_DG.jpeg" alt="Directeur Général BNI" className="w-full h-full object-cover min-h-[300px]" />
-            <div className="absolute inset-0 bg-linear-to-r from-transparent to-black/10"></div>
+          <div className="w-50 shrink-0 relative">
+            <img src="/Image_DG.jpeg" alt="Directeur Général BNI" className="w-full h-full object-cover min-h-[320px]" />
+            <div className="absolute inset-0 bg-linear-to-r from-transparent to-black/20"></div>
           </div>
-          <div className="flex-1 p-6 flex flex-col justify-center">
-            <span className="text-[11px] uppercase tracking-[2px] text-brand font-bold block mb-3">Mot du Directeur Général</span>
-            <p className="text-white text-sm leading-relaxed italic mb-4" style={{textShadow: '0 1px 3px rgba(0,0,0,0.5)'}}>
+          <div className="flex-1 p-7 flex flex-col justify-center">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-6 h-0.5 bg-brand rounded-full"></span>
+              <span className="text-[11px] uppercase tracking-[2px] text-brand font-bold">Mot du Directeur Général</span>
+            </div>
+            <p className="text-white/90 text-[14px] leading-relaxed italic mb-5" style={{textShadow: '0 1px 4px rgba(0,0,0,0.5)'}}>
               "La BNI se pose en leader du marché et affiche ses valeurs souveraines de qualité et de professionnalisme. Ensemble, choisissons notre BNI pour Découvrir, Challenger et Innover."
             </p>
-            <div className="flex items-center gap-3 mt-auto pt-3 border-t border-white/20">
-              <div className="w-8 h-px bg-brand"></div>
+            <div className="flex items-center gap-3 mt-auto pt-4 border-t border-white/15">
+              <div className="w-9 h-9 rounded-full bg-brand/20 flex items-center justify-center">
+                <span className="text-brand text-xs font-bold">YF</span>
+              </div>
               <div>
-                <div className="text-xs font-semibold text-white" style={{textShadow: '0 1px 2px rgba(0,0,0,0.4)'}}>Youssouf FADIGA</div>
-                <div className="text-[11px] text-white/70 font-medium">Directeur Général de la BNI</div>
+                <div className="text-[13px] font-semibold text-white">Youssouf FADIGA</div>
+                <div className="text-[11px] text-white/50 font-medium">Directeur Général de la BNI</div>
               </div>
             </div>
           </div>
@@ -78,12 +83,12 @@ export default function HeroSlider() {
 
       {/* DG Badge — Mobile */}
       <div className="lg:hidden absolute bottom-24 left-4 right-4 sm:left-6 sm:right-6 z-20">
-        <div className="bg-black/50 backdrop-blur-xl border border-white/25 rounded-xl p-4 flex items-center gap-4">
-          <img src="/Image_DG.jpeg" alt="DG BNI" className="w-14 h-14 rounded-full border-2 border-white/30 shrink-0 object-cover" />
+        <div className="bg-black/55 backdrop-blur-xl border border-white/15 rounded-2xl p-5 flex items-center gap-4 shadow-[0_4px_40px_rgba(0,0,0,0.35)]">
+          <img src="/Image_DG.jpeg" alt="DG BNI" className="w-16 h-16 rounded-full border-2 border-brand/40 shrink-0 object-cover shadow-lg" />
           <div>
             <span className="text-[10px] uppercase tracking-[2px] text-brand font-bold">Mot du Directeur Général</span>
-            <p className="text-white text-sm italic leading-relaxed mt-1" style={{textShadow: '0 1px 3px rgba(0,0,0,0.5)'}}>"Ensemble, choisissons notre BNI pour Découvrir, Challenger et Innover."</p>
-            <div className="text-[11px] text-white/70 mt-1 font-medium">Youssouf FADIGA — Directeur Général de la BNI</div>
+            <p className="text-white/90 text-sm italic leading-relaxed mt-1" style={{textShadow: '0 1px 3px rgba(0,0,0,0.5)'}}>"Ensemble, choisissons notre BNI pour Découvrir, Challenger et Innover."</p>
+            <div className="text-[11px] text-white/50 mt-1.5 font-medium">Youssouf FADIGA — Directeur Général</div>
           </div>
         </div>
       </div>

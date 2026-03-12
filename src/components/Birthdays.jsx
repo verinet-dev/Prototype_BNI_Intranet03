@@ -3,9 +3,9 @@ import { birthdayToday, birthdaysWeek } from '../data/data';
 
 export default function Birthdays() {
   return (
-    <div className="card">
+    <div className="card card-accent">
       <div className="card-header">
-        <div className="flex items-center"><div className="card-header-bar accent"></div><div className="card-header-icon accent"><Cake strokeWidth={1.8} className="w-4 h-4 text-accent" /></div><h3 className="accent">Anniversaires</h3></div>
+        <div className="flex items-center"><div className="card-header-icon accent"><Cake strokeWidth={1.8} className="w-4 h-4 text-accent" /></div><h3 className="accent">Anniversaires</h3></div>
       </div>
       {/* Aujourd'hui */}
       <div className="bg-linear-to-br from-orange-50 via-amber-50 to-yellow-50 border-b border-orange-100 p-4">
